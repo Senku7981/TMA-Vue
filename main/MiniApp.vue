@@ -3,10 +3,8 @@ import { MainButton, useWebAppPopup, useWebApp } from 'vue-tg';
 
 const { showAlert } = useWebAppPopup();
 const webApp = useWebApp();
-
-webApp.sendData('dfdlk');
 </script>
 
 <template>
-	<MainButton text="Open alert" @click="() => showAlert('Hello!')" />
+	<MainButton text="Open alert" @click="() => showAlert(webApp.initData)" />
 </template>
