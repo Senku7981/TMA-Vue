@@ -9,5 +9,9 @@ const webApp = useWebApp();
 
 <template>
 	{{ webApp.initData }}
+	platform
+	{{ webApp.version }}
+	init Data
+	{{ webApp.initDataUnsafe }}
 	<MainButton text="Open alert" @click="() => showAlert('Hello!')" />
 </template>
